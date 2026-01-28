@@ -45,11 +45,31 @@ themeToggle?.addEventListener('click', () => {
 });
 
 // Menu Mobile
-const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-const mobileMenu = document.getElementById('mobile-menu');
+// Updated Mobile Menu Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = mobileMenu?.querySelectorAll('a');
 
-mobileMenuBtn?.addEventListener('click', () => {
-    mobileMenu?.classList.toggle('hidden');
+    // Toggle menu open/closed
+    mobileMenuBtn?.addEventListener('click', (e) => {
+        e.stopPropagation(); // Prevents immediate closing
+        mobileMenu?.classList.toggle('hidden');
+    });
+
+    // Automatically close when a link is clicked
+    mobileLinks?.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu?.classList.add('hidden');
+        });
+    });
+
+    // Close menu if user clicks anywhere else on the screen
+    document.addEventListener('click', (e) => {
+        if (!mobileMenu?.contains(e.target) && !mobileMenuBtn?.contains(e.target)) {
+            mobileMenu?.classList.add('hidden');
+        }
+    });
 });
 
 // Efeito de Scroll no Navbar

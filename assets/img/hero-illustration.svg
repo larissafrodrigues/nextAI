@@ -1,0 +1,48 @@
+<svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract AI illustration">
+  <defs>
+    <linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b59ff" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#00b3ff" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="lg2" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.88"/>
+      <stop offset="1" stop-color="#2b59ff" stop-opacity="0.55"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+
+  <circle cx="118" cy="92" r="70" fill="url(#lg1)" filter="url(#blur)" opacity="0.55"/>
+  <circle cx="412" cy="88" r="78" fill="url(#lg2)" filter="url(#blur)" opacity="0.52"/>
+  <circle cx="360" cy="260" r="95" fill="url(#lg1)" filter="url(#blur)" opacity="0.30"/>
+
+  <g opacity="0.98">
+    <rect x="58" y="78" width="404" height="204" rx="22" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.22)"/>
+    <g stroke="rgba(255,255,255,0.55)" stroke-width="2.2" fill="none" stroke-linecap="round">
+      <path d="M132 132 C 188 98, 246 98, 304 132"/>
+      <path d="M204 232 C 250 262, 310 262, 360 232"/>
+      <path d="M152 206 C 210 170, 278 170, 336 206"/>
+    </g>
+    <g fill="white" opacity="0.92">
+      <circle cx="132" cy="132" r="7"/>
+      <circle cx="304" cy="132" r="7"/>
+      <circle cx="204" cy="232" r="7"/>
+      <circle cx="360" cy="232" r="7"/>
+      <circle cx="152" cy="206" r="7"/>
+      <circle cx="336" cy="206" r="7"/>
+    </g>
+    <g opacity="0.9">
+      <rect x="86" y="102" width="118" height="46" rx="14" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.22)"/>
+      <rect x="316" y="102" width="118" height="46" rx="14" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.22)"/>
+      <rect x="86" y="212" width="148" height="50" rx="14" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.22)"/>
+      <rect x="266" y="212" width="168" height="50" rx="14" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.22)"/>
+    </g>
+    <g fill="rgba(255,255,255,0.78)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="12">
+      <text x="104" y="130">telemetry</text>
+      <text x="338" y="130">learning</text>
+      <text x="104" y="242">security</text>
+      <text x="286" y="242">optimization</text>
+    </g>
+  </g>
+</svg>

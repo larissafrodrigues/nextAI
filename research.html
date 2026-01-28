@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextAI | Research Group</title>
+    
+    <link rel="icon" type="image/png" href="assets/img/nextAI2.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="h-full font-body bg-[#0A0E17] text-white">
+    <nav id="navbar" class="fixed top-0 w-full z-50 border-b border-white/5 backdrop-blur-md transition-all h-20 bg-[#0A0E17]/90">
+        <div class="max-w-7xl mx-auto px-4 h-full flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                 <img src="assets/img/nextAI.png" alt="NextAI Logo" class="h-16 w-auto object-contain transition-transform hover:scale-105">
+            </a>
+            <div class="hidden lg:flex gap-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-[#00D4FF] transition-colors">About</a>
+                <a href="research.html" class="text-[#00D4FF]">Research</a>
+                <a href="projects.html" class="hover:text-[#00D4FF] transition-colors">Projects</a>
+                <a href="publications.html" class="hover:text-[#00D4FF] transition-colors">Publications</a>
+                <a href="team.html" class="hover:text-[#00D4FF] transition-colors">Team</a>
+                <a href="contact.html" class="btn-primary px-5 py-2 rounded-full text-[#0A0E17]">Contact Us</a>
+            </div>
+            <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-400">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <main class="pt-40 pb-20 grid-pattern min-h-screen">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-[#00D4FF] text-sm font-medium uppercase tracking-widest">Research Areas</span>
+                <h2 class="font-heading text-4xl lg:text-5xl font-bold mt-4">Exploring New Frontiers</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-[#111827] p-8 rounded-2xl border border-white/5 card-glow">
+                    <h3 class="text-xl font-bold mb-4">AI for Networking & 6G</h3>
+                    <p class="text-gray-400">Machine learning solutions for next-generation networks and resource allocation.</p>
+                </div>
+                <div class="bg-[#111827] p-8 rounded-2xl border border-white/5 card-glow">
+                    <h3 class="text-xl font-bold mb-4">Edge AI</h3>
+                    <p class="text-gray-400">Orchestration of AI workloads at the edge, optimizing latency and resource use.</p>
+                </div>
+                <div class="bg-[#111827] p-8 rounded-2xl border border-white/5 card-glow">
+                    <h3 class="text-xl font-bold mb-4">Federated Learning</h3>
+                    <p class="text-gray-400">Privacy-preserving distributed machine learning across heterogeneous devices.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-12 border-t border-white/5 text-center text-gray-500 text-sm bg-[#0A0E17]">
+        © 2026 NextAI Research Group. All rights reserved.
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

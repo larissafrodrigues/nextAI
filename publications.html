@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contributions | NextAI Research Group</title>
+    
+    <link rel="icon" type="image/png" href="assets/img/nextAI2.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="h-full font-body bg-[#0A0E17] text-white overflow-x-hidden">
+
+    <nav id="navbar" class="fixed top-0 w-full z-50 border-b border-white/5 backdrop-blur-md transition-all h-20 bg-[#0A0E17]/90">
+        <div class="max-w-7xl mx-auto px-4 h-full flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/img/nextAI.png" alt="NextAI Logo" class="h-16 w-auto object-contain transition-transform hover:scale-105">
+            </a>
+            <div class="hidden lg:flex gap-8 text-sm font-medium">
+                <a href="index.html" class="text-gray-300 hover:text-[#00D4FF] transition-colors">About</a>
+                <a href="research.html" class="text-gray-300 hover:text-[#00D4FF] transition-colors">Research</a>
+                <a href="projects.html" class="text-gray-300 hover:text-[#00D4FF] transition-colors">Projects</a>
+                <a href="publications.html" class="text-[#00D4FF] font-bold underline decoration-2 underline-offset-8">Publications</a>
+                <a href="team.html" class="text-gray-300 hover:text-[#00D4FF] transition-colors">Team</a>
+                <a href="contact.html" class="btn-primary px-5 py-2 rounded-full text-[#0A0E17] font-bold transition-all">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-400">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <main class="pt-40 pb-20 grid-pattern min-h-screen">
+        <div class="max-w-5xl mx-auto px-4">
+            
+            <div class="text-center mb-16">
+                <span class="text-[#00D4FF] text-sm font-medium uppercase tracking-widest">Scientific Output</span>
+                <h2 class="font-heading text-5xl font-bold mt-4 mb-6">Research <span class="gradient-text">Contributions</span></h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto italic">
+                    Click on a title to access the full paper.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button onclick="filterPubs('all', event)" class="pub-filter-btn active px-6 py-2 rounded-full border border-[#00D4FF] bg-[#00D4FF]/10 text-[#00D4FF] transition-all text-sm font-medium">All Contributions</button>
+                <button onclick="filterPubs('journal', event)" class="pub-filter-btn px-6 py-2 rounded-full border border-white/10 bg-white/5 hover:border-[#00D4FF]/50 transition-all text-sm font-medium text-white">Journals</button>
+                <button onclick="filterPubs('conference', event)" class="pub-filter-btn px-6 py-2 rounded-full border border-white/10 bg-white/5 hover:border-[#00D4FF]/50 transition-all text-sm font-medium text-white">Conferences</button>
+            </div>
+
+            <div id="publications-grid" class="space-y-6">
+                
+                <div class="pub-card journal bg-[#111827] border border-white/5 p-6 lg:p-8 rounded-3xl transition-all hover:border-[#00D4FF]/30 card-glow">
+                    <div class="flex flex-wrap items-center gap-3 mb-4">
+                        <span class="px-3 py-1 bg-purple-500/10 text-purple-400 text-[10px] uppercase font-bold tracking-widest rounded-md border border-purple-500/20">Journal</span>
+                        <span class="text-gray-500 text-sm">2025</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <a href="http://dx.doi.org/10.1109/access.2025.3599356" target="_blank" class="hover:text-[#00D4FF] transition-colors block leading-tight">
+                            Unleashing AI-empowered Slices on Mobile Networks for Natively Cognitive Service Delivery
+                        </a>
+                    </h3>
+                    <p class="text-gray-400 text-sm mb-2 italic">Moreira, R., Moreira, L. F. R., & Silva, F. O.</p>
+                    <p class="text-[#00D4FF]/80 text-xs font-semibold uppercase tracking-wider">IEEE Access</p>
+                </div>
+
+                <div class="pub-card journal bg-[#111827] border border-white/5 p-6 lg:p-8 rounded-3xl transition-all hover:border-[#00D4FF]/30 card-glow">
+                    <div class="flex flex-wrap items-center gap-3 mb-4">
+                        <span class="px-3 py-1 bg-purple-500/10 text-purple-400 text-[10px] uppercase font-bold tracking-widest rounded-md border border-purple-500/20">Journal</span>
+                        <span class="text-gray-500 text-sm">2025</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <a href="http://dx.doi.org/10.1016/j.neucom.2025.129402" target="_blank" class="hover:text-[#00D4FF] transition-colors block leading-tight">
+                            Deep learning based image classification for embedded devices: A systematic review
+                        </a>
+                    </h3>
+                    <p class="text-gray-400 text-sm mb-2 italic">Rodrigues Moreira, L. F., Moreira, R., Travençolo, B. A. N., & Backes, A. R.</p>
+                    <p class="text-[#00D4FF]/80 text-xs font-semibold uppercase tracking-wider">Neurocomputing</p>
+                </div>
+
+                <div class="pub-card journal bg-[#111827] border border-white/5 p-6 lg:p-8 rounded-3xl transition-all hover:border-[#00D4FF]/30 card-glow">
+                    <div class="flex flex-wrap items-center gap-3 mb-4">
+                        <span class="px-3 py-1 bg-purple-500/10 text-purple-400 text-[10px] uppercase font-bold tracking-widest rounded-md border border-purple-500/20">Journal</span>
+                        <span class="text-gray-500 text-sm">2025</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <a href="http://dx.doi.org/10.22456/2175-2745.143508" target="_blank" class="hover:text-[#00D4FF] transition-colors block leading-tight">
+                            Data Augmentation and Convolutional Network Architecture Influence on Distributed Learning.
+                        </a>
+                    </h3>
+                    <p class="text-gray-400 text-sm mb-2 italic">Jansen, V. F., Martins, E. T., Lima, Y. S., Silva, F. O., Moreira, R., Rodrigues Moreira, L. F.</p>
+                    <p class="text-[#00D4FF]/80 text-xs font-semibold uppercase tracking-wider">REVISTA DE INFORMÁTICA TEÓRICA E APLICADA: RITA</p>
+                </div>
+
+                <div class="pub-card conference bg-[#111827] border border-white/5 p-6 lg:p-8 rounded-3xl transition-all hover:border-[#00D4FF]/30 card-glow">
+                    <div class="flex flex-wrap items-center gap-3 mb-4">
+                        <span class="px-3 py-1 bg-blue-500/10 text-blue-400 text-[10px] uppercase font-bold tracking-widest rounded-md border border-blue-500/20">Conference</span>
+                        <span class="text-gray-500 text-sm">2025</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <a href="http://dx.doi.org/10.1109/eucnc/6gsummit63408.2025.11037182" target="_blank" class="hover:text-[#00D4FF] transition-colors block leading-tight">
+                            Leveraging Infrastructure Monitoring for User Experience Forecasting in Container-Based 5G Core
+                        </a>
+                    </h3>
+                    <p class="text-gray-400 text-sm mb-2 italic">Da Silva, B. M., Moreira, L. F. R., Moreira, R., & Silva, F. O.</p>
+                    <p class="text-[#00D4FF]/80 text-xs font-semibold uppercase tracking-wider">EuCNC & 6G Summit 2025</p>
+                </div>
+
+                <div class="pub-card conference bg-[#111827] border border-white/5 p-6 lg:p-8 rounded-3xl transition-all hover:border-[#00D4FF]/30 card-glow">
+                    <div class="flex flex-wrap items-center gap-3 mb-4">
+                        <span class="px-3 py-1 bg-blue-500/10 text-blue-400 text-[10px] uppercase font-bold tracking-widest rounded-md border border-blue-500/20">Conference</span>
+                        <span class="text-gray-500 text-sm">2025</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <a href="http://dx.doi.org/10.5753/wpeif.2025.8714" target="_blank" class="hover:text-[#00D4FF] transition-colors block leading-tight">
+                            Optimizing Edge Gaming Slices through an Enhanced User Plane Function and Analytics in Beyond-5G Networks
+                        </a>
+                    </h3>
+                    <p class="text-gray-400 text-sm mb-2 italic">Silva, B. M., Rodrigues Moreira, L. F., Silva, F. O., & Moreira, R.</p>
+                    <p class="text-[#00D4FF]/80 text-xs font-semibold uppercase tracking-wider">WPEIF 2025</p>
+                </div>
+
+                <div class="pub-card conference bg-[#111827] border border-white/5 p-6 lg:p-8 rounded-3xl transition-all hover:border-[#00D4FF]/30 card-glow">
+                    <div class="flex flex-wrap items-center gap-3 mb-4">
+                        <span class="px-3 py-1 bg-blue-500/10 text-blue-400 text-[10px] uppercase font-bold tracking-widest rounded-md border border-blue-500/20">Conference</span>
+                        <span class="text-gray-500 text-sm">2024</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <a href="http://dx.doi.org/10.1109/CloudNet62863.2024.10815871" target="_blank" class="hover:text-[#00D4FF] transition-colors block leading-tight">
+                            Maximizing the Power of Cognitive Services with an AI-as-a-Service Architecture for Seamless Delivery
+                        </a>
+                    </h3>
+                    <p class="text-gray-400 text-sm mb-2 italic">Moreira, L. F. R., Moreira, R., Martins, E. T., Jansen, V. F., Lima, Y. S., et al.</p>
+                    <p class="text-[#00D4FF]/80 text-xs font-semibold uppercase tracking-wider">IEEE CloudNet 2024</p>
+                </div>
+
+                <div class="pub-card conference bg-[#111827] border border-white/5 p-6 lg:p-8 rounded-3xl transition-all hover:border-[#00D4FF]/30 card-glow">
+                    <div class="flex flex-wrap items-center gap-3 mb-4">
+                        <span class="px-3 py-1 bg-blue-500/10 text-blue-400 text-[10px] uppercase font-bold tracking-widest rounded-md border border-blue-500/20">Conference</span>
+                        <span class="text-gray-500 text-sm">2024</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <a href="http://dx.doi.org/10.1109/CloudNet62863.2024.10815777" target="_blank" class="hover:text-[#00D4FF] transition-colors block leading-tight">
+                            Enabling Intelligence on Edge Through an Artificial Intelligence as a Service Architecture
+                        </a>
+                    </h3>
+                    <p class="text-gray-400 text-sm mb-2 italic">Moreira, L. F. R., Saar, L. N. F. B., Moreira, R., Rodrigues, L. G. F., et al.</p>
+                    <p class="text-[#00D4FF]/80 text-xs font-semibold uppercase tracking-wider">IEEE CloudNet 2024</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-12 border-t border-white/5 text-center text-gray-500 text-sm bg-[#0A0E17]">
+        © 2026 NextAI Research Group. All rights reserved.
+    </footer>
+
+    <script>
+        function filterPubs(category, event) {
+            const buttons = document.querySelectorAll('.pub-filter-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('border-[#00D4FF]', 'text-[#00D4FF]', 'bg-[#00D4FF]/10');
+                btn.classList.add('border-white/10', 'bg-white/5', 'text-white');
+            });
+            
+            event.currentTarget.classList.add('border-[#00D4FF]', 'text-[#00D4FF]', 'bg-[#00D4FF]/10');
+            event.currentTarget.classList.remove('border-white/10', 'bg-white/5', 'text-white');
+
+            const cards = document.querySelectorAll('.pub-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.classList.contains(category)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
